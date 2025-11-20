@@ -122,10 +122,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W                   &kp E               &kp R                       &kp T                                                                 &kp Y        &kp U                      &lt 5 I             &kp O            &kp P
-&hm LEFT_CONTROL A  &S_behavior LEFT_ALT S  &S_behavior LCMD D  &S_behavior LEFT_SHIFT F    &lt 3 G           &mkp LCLK                        &kp BACKSLASH      &kp H        &S_behavior RIGHT_SHIFT J  &S_behavior RCMD K  &hm RIGHT_ALT L  &hm RIGHT_CONTROL MINUS
-&mt LEFT_SHIFT Z    &kp X                   &kp C               &kp V                       &kp B             &mkp RCLK                        &kp RIGHT_BRACKET  &kp N        &kp M                      &kp COMMA           &kp DOT          &kp SLASH
-&kp ESC             &caps_word              &kp EXCL            &lt_to_layer_0 6 BACKSPACE  &lt 1 LANGUAGE_1  &lt_to_layer_0 3 LANGUAGE_2      &kp ENTER          &lt 1 SPACE                                                                  &kp DEL
+&kp Q               &kp W                   &kp E               &kp R                     &kp T                                                                   &kp Y        &kp U                      &lt 5 I             &kp O            &kp P
+&hm LEFT_CONTROL A  &S_behavior LEFT_ALT S  &S_behavior LCMD D  &S_behavior LEFT_SHIFT F  &lt 3 G                     &mkp LCLK                        &mkp LCLK  &kp H        &S_behavior RIGHT_SHIFT J  &S_behavior RCMD K  &hm RIGHT_ALT L  &hm RIGHT_CONTROL MINUS
+&mt LEFT_SHIFT Z    &kp X                   &kp C               &kp V                     &kp B                       &mkp RCLK                        &mkp RCLK  &kp N        &kp M                      &kp COMMA           &kp DOT          &kp SLASH
+&kp ESC             &caps_word              &kp EXCL            &lt 1 LANGUAGE_2          &lt_to_layer_0 6 BACKSPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp ENTER  &lt 1 SPACE                                                                  &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
