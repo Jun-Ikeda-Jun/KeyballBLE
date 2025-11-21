@@ -123,9 +123,9 @@
         default_layer {
             bindings = <
 &kp Q               &kp W                   &kp E               &kp R                     &kp T                                                                    &kp Y        &kp U                      &lt 5 I             &kp O            &kp P
-&hm LEFT_CONTROL A  &S_behavior LEFT_ALT S  &S_behavior LCMD D  &S_behavior LEFT_SHIFT F  &lt 3 G                     &mkp LCLK                        &kp DELETE  &kp H        &S_behavior RIGHT_SHIFT J  &S_behavior RCMD K  &hm RIGHT_ALT L  &hm RIGHT_CONTROL MINUS
-&mt LEFT_SHIFT Z    &kp X                   &kp C               &kp V                     &kp B                       &mkp RCLK                        &mkp RCLK   &kp N        &kp M                      &kp COMMA           &kp DOT          &kp SLASH
-&kp ESC             &caps_word              &kp EXCL            &lt 1 LANGUAGE_2          &lt_to_layer_0 6 BACKSPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp ENTER   &lt 1 SPACE                                                                  &kp QMARK
+&hm LEFT_CONTROL A  &S_behavior LEFT_ALT S  &S_behavior LCMD D  &S_behavior LEFT_SHIFT F  &lt 3 G                      &mkp LCLK                       &kp DELETE  &kp H        &S_behavior RIGHT_SHIFT J  &S_behavior RCMD K  &hm RIGHT_ALT L  &hm RIGHT_CONTROL MINUS
+&mt LEFT_SHIFT Z    &kp X                   &kp C               &kp V                     &kp B                        &mkp RCLK                       &mkp RCLK   &kp N        &kp M                      &kp COMMA           &kp DOT          &kp SLASH
+&kp ESC             &caps_word              &kp EXCL            &lt 1 LANGUAGE_2          &lt_to_layer_0 3 LANGUAGE_1  &lt_to_layer_0 6 BACKSPACE      &kp ENTER   &lt 1 SPACE                                                                  &kp QMARK
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -163,7 +163,7 @@
         MOUSE {
             bindings = <
 &trans    &trans     &trans     &trans     &trans                           &trans    &trans     &trans     &trans     &trans
-&mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &mkp LCLK      &trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5
+&mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &mkp LCLK      &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp MB5
 &trans    &trans     &trans     &trans     &trans    &mkp RCLK      &trans  &trans    &trans     &trans     &trans     &trans
 &trans    &trans     &trans     &trans     &trans    &trans         &trans  &trans                                     &trans
             >;
@@ -181,21 +181,10 @@
         layer_6 {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans     &trans      &studio_unlock  &trans        &mkp LCLK     &mkp RCLK     &trans        &trans
+&trans  &trans        &trans        &trans        &trans     &trans      &studio_unlock  &trans        &mkp LCLK     &mkp RCLK     &mkp MCLK     &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kt KP_N4  &trans      &bootloader     &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans     &trans      &to 0           &to 7                                                   &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans     &trans      &to 0           &to 0                                                   &bt BT_CLR_ALL
             >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans          &trans  &trans              &trans  &trans                      &trans  &trans  &trans               &trans  &trans
-&hm LEFT_WIN A  &trans  &hm LEFT_CONTROL D  &trans  &trans  &trans      &trans  &trans  &trans  &hm RIGHT_CONTROL K  &trans  &hm RIGHT_WIN LC(MINUS)
-&trans          &trans  &trans              &trans  &trans  &trans      &trans  &trans  &trans  &trans               &trans  &trans
-&trans          &trans  &trans              &trans  &trans  &trans      &trans  &trans                                       &trans
-            >;
-
-            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
     };
 };
