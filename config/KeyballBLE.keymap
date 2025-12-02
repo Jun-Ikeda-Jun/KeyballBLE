@@ -139,7 +139,7 @@
             bindings = <
 &kp Q             &kp W                   &kp E                       &kp R                     &kp T                                                             &kp Y        &kp U                      &lt 5 I                      &kp O            &kp P
 &hm LEFT_GUI A    &S_behavior LEFT_ALT S  &S_behavior LEFT_CONTROL D  &S_behavior LEFT_SHIFT F  &lt 3 G           &mkp LCLK                        &kp DELETE     &kp H        &S_behavior RIGHT_SHIFT J  &S_behavior RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RIGHT_GUI MINUS
-&mt LEFT_SHIFT Z  &kp X                   &lt 2 C                     &lt 6 V                   &kp B             &mkp RCLK                        &kp BACKSPACE  &kp N        &lt 5 M                    &lt 2 COMMA                  &kp DOT          &kp SLASH
+&mt LEFT_SHIFT Z  &lt 1 X                 &lt 2 C                     &lt 6 V                   &kp B             &mkp RCLK                        &kp BACKSPACE  &kp N        &lt 5 M                    &lt 2 COMMA                  &kp DOT          &kp SLASH
 &kp ESC           &caps_word              &kp EXCL                    &lt 6 BACKSPACE           &lt 1 LANGUAGE_2  &lt_to_layer_0 3 LANGUAGE_1      &lt 1 ENTER    &lt 2 SPACE                                                                           &kp QMARK
             >;
 
