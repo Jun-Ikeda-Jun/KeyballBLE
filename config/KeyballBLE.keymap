@@ -147,7 +147,7 @@
 &kp Q           &kp W                   &kp E                       &kp R                     &kp T                                                             &kp Y        &kp U                      &lt 5 I                      &kp O            &kp P
 &hm LEFT_GUI A  &S_behavior LEFT_ALT S  &S_behavior LEFT_CONTROL D  &S_behavior LEFT_SHIFT F  &lt 3 G           &mkp LCLK                        &kp DELETE     &kp H        &S_behavior RIGHT_SHIFT J  &S_behavior RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RIGHT_GUI MINUS
 &lt 5 Z         &lt 1 X                 &lt 2 C                     &lt 6 V                   &kp B             &mkp RCLK                        &kp BACKSPACE  &kp N        &lt 5 M                    &lt 2 COMMA                  &kp DOT          &kp SLASH
-&kp ESC         &caps_word              &kp EXCL                    &lt 6 BACKSPACE           &lt 1 LANGUAGE_2  &lt_to_layer_0 3 LANGUAGE_1      &lt 1 ENTER    &lt 2 SPACE                                                                           &modoru
+&kp ESC         &caps_word              &kp EXCL                    &kp BACKSPACE             &lt 1 LANGUAGE_2  &lt_to_layer_0 3 LANGUAGE_1      &lt 1 ENTER    &lt 2 SPACE                                                                           &modoru
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -164,10 +164,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                         &kp CARET              &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE        &kp EXCLAMATION        &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp DOUBLE_QUOTES     &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                           &kp PIPE
+&kp MINUS     &kp N7        &kp N8        &kp N9        &kp PLUS                                                         &kp CARET              &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE        &kp EXCLAMATION        &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp DOUBLE_QUOTES     &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans        &trans        &trans        &trans        &trans        &trans                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                           &kp PIPE
             >;
         };
 
