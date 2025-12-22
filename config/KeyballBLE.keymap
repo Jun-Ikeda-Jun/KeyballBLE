@@ -184,10 +184,10 @@
 
         MOUSE {
             bindings = <
-&trans    &trans     &trans     &trans     &trans                           &trans    &trans     &mkp MCLK  &trans     &trans
-&mkp MB4  &mkp MCLK  &mkp RCLK  &mkp LCLK  &mkp MB5  &mkp LCLK      &trans  &mkp MB4  &mkp LCLK  &none      &mkp RCLK  &mkp MB5
-&trans    &trans     &trans     &trans     &trans    &none          &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans     &trans     &trans     &trans    &trans         &trans  &trans                                     &trans
+&trans    &trans     &trans     &trans     &trans                        &trans    &trans     &mkp MCLK  &trans     &trans
+&mkp MB4  &mkp MCLK  &mkp RCLK  &mkp LCLK  &mkp MB5  &none       &trans  &mkp MB4  &mkp LCLK  &none      &mkp RCLK  &mkp MB5
+&trans    &trans     &trans     &trans     &trans    &none       &trans  &trans    &trans     &trans     &trans     &trans
+&trans    &trans     &trans     &trans     &trans    &trans      &trans  &trans                                     &trans
             >;
         };
 
