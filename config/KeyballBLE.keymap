@@ -20,12 +20,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <13 12>;
+            key-positions = <20 19>;
         };
 
         shift+tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 11>;
+            key-positions = <19 18>;
         };
 
         katakana {
@@ -40,32 +40,32 @@
 
         left {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <18 19>;
+            key-positions = <18 19 11 12>;
         };
 
         right {
             bindings = <&kp RIGHT>;
-            key-positions = <19 20>;
+            key-positions = <12 13>;
         };
 
         down {
             bindings = <&kp DOWN>;
-            key-positions = <31 32>;
+            key-positions = <23 24>;
         };
 
         up {
             bindings = <&kp UP_ARROW>;
-            key-positions = <7 8>;
+            key-positions = <1 2>;
         };
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <17 18>;
+            key-positions = <13 14>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <20 21>;
+            key-positions = <11 10>;
         };
     };
 
