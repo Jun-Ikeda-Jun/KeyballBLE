@@ -10,7 +10,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: abb64ba316c29caddc49727ca2cac2f0ed5970c7  # Pin to 2025-12-07 (before Zephyr pmw3610 conflict)
+      revision: e34793e8c7193bc868b95ec38d78f67956f759cb  # Pin to 2025-11-17 (before API breaking changes)
       path: zmk
       import: app/west.yml
     - name: zmk-pmw3610-driver
