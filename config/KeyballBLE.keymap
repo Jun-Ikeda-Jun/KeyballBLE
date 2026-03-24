@@ -67,6 +67,36 @@
             bindings = <&kp END>;
             key-positions = <11 10>;
         };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <31 32>;
+        };
+
+        ka {
+            bindings = <&ka_macro>;
+            key-positions = <19 10>;
+        };
+
+        ki {
+            bindings = <&ki_macro>;
+            key-positions = <19 7>;
+        };
+
+        ku {
+            bindings = <&ku_macro>;
+            key-positions = <19 6>;
+        };
+
+        ke {
+            bindings = <&ke_macro>;
+            key-positions = <19 2>;
+        };
+
+        nm {
+            bindings = <&nm_macro>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
@@ -82,6 +112,41 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp LEFT>;
             label = "MODORU";
+        };
+
+        nm_macro: nm_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N>;
+            label = "NM_MACRO";
+        };
+
+        ka_macro: ka_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A>;
+            label = "KA_MACRO";
+        };
+
+        ki_macro: ki_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp I>;
+            label = "KI_MACRO";
+        };
+
+        ku_macro: ku_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp U>;
+            label = "KU_MACRO";
+        };
+
+        ke_macro: ke_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp E>;
+            label = "KE_MACRO";
         };
     };
 
