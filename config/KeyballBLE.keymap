@@ -67,36 +67,6 @@
             bindings = <&kp END>;
             key-positions = <11 10>;
         };
-
-        semicolon {
-            bindings = <&kp SEMI>;
-            key-positions = <31 32>;
-        };
-
-        ka {
-            bindings = <&ka_macro>;
-            key-positions = <19 10>;
-        };
-
-        ki {
-            bindings = <&ki_macro>;
-            key-positions = <19 7>;
-        };
-
-        ku {
-            bindings = <&ku_macro>;
-            key-positions = <19 6>;
-        };
-
-        ke {
-            bindings = <&ke_macro>;
-            key-positions = <19 2>;
-        };
-
-        nm {
-            bindings = <&nm_macro>;
-            key-positions = <29 30>;
-        };
     };
 
     macros {
@@ -113,55 +83,6 @@
             bindings = <&kp LEFT_ALT &kp LEFT>;
             label = "MODORU";
         };
-
-        nm_macro: nm_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp N>;
-            label = "NM_MACRO";
-        };
-
-        ka_macro: ka_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K &kp A>;
-            label = "KA_MACRO";
-        };
-
-        ki_macro: ki_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K &kp I>;
-            label = "KI_MACRO";
-        };
-
-        ku_macro: ku_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K &kp U>;
-            label = "KU_MACRO";
-        };
-
-        ke_macro: ke_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K &kp E>;
-            label = "KE_MACRO";
-        };
-
-        ime_eisuu: ime_eisuu {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&kp LC(SEMI)>;
-            label = "IME_EISUU";
-        };
-
-        ime_kana_to0: ime_kana_to0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &kp LC(SQT)>;
-            label = "IME_KANA_TO0";
-        };
     };
 
     behaviors {
@@ -169,24 +90,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        ime_eisuu_lt: ime_eisuu_lt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "IME_EISUU_LT";
-            bindings = <&mo>, <&ime_eisuu>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        ime_kana_lt: ime_kana_lt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "IME_KANA_LT";
-            bindings = <&mo>, <&ime_kana_to0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -244,7 +147,7 @@
 &kp Q           &kp W                   &kp E                       &kp R                     &kp T                                                          &kp Y        &kp U                      &lt 5 I                      &kp O            &kp P
 &hm LEFT_GUI A  &S_behavior LEFT_ALT S  &S_behavior LEFT_CONTROL D  &S_behavior LEFT_SHIFT F  &lt 3 G                      &mkp LCLK          &kp DELETE     &kp H        &S_behavior RIGHT_SHIFT J  &S_behavior RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RIGHT_GUI MINUS
 &lt 5 Z         &lt 1 X                 &lt 2 C                     &lt 6 V                   &kp B                        &mkp RCLK          &kp BACKSPACE  &kp N        &lt 5 M                    &lt 2 COMMA                  &kp DOT          &kp SLASH
-&kp ESC         &caps_word              &kp EXCL                    &ime_eisuu_lt 1 0          &ime_kana_lt 3 0  &kp BACKSPACE      &lt 1 ENTER    &lt 2 SPACE                                                                           &modoru
+&kp ESC         &caps_word              &kp EXCL                    &lt 1 LANGUAGE_2          &lt_to_layer_0 3 LANGUAGE_1  &kp BACKSPACE      &lt 1 ENTER    &lt 2 SPACE                                                                           &modoru
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
