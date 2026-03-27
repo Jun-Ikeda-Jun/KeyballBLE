@@ -43,9 +43,14 @@
             key-positions = <18 19 11 12>;
         };
 
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <12 13>;
+        tab_left {
+            bindings = <&kp TAB>;
+            key-positions = <13 12>;
+        };
+
+        shift_tab_left {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 11>;
         };
 
         down {
